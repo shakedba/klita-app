@@ -51,6 +51,14 @@
       "command": "npx",
       "args": ["-y", "mermaid-mcp-server"],
       "comment": "Diagram generation — architecture, flows, ERDs, sequence diagrams"
+    },
+    "linear": {
+      "command": "npx",
+      "args": ["-y", "@linear/mcp-server"],
+      "env": {
+        "LINEAR_API_KEY": "${LINEAR_API_KEY}"
+      },
+      "comment": "Linear — create/update issues, manage cycles, query backlog directly from Claude"
     }
   }
 }
