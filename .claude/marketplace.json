@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "name": "pm-skills",
+      "repo": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "addedAt": "2026-04-17"
+    }
+  ],
+  "installed": [
+    {
+      "plugin": "pm-product-strategy",
+      "source": "pm-skills",
+      "version": "1.0.1",
+      "description": "Product strategy skills for PMs: vision, strategy canvas, value propositions, lean canvas, business model canvas, SWOT, PESTLE, Ansoff Matrix, Porter's Five Forces, and monetization.",
+      "author": "Paweł Huryn",
+      "license": "MIT",
+      "commands": ["strategy", "business-model", "market-scan", "pricing", "value-proposition"],
+      "skills": ["ansoff-matrix", "business-model", "lean-canvas", "monetization-strategy", "pestle-analysis", "porters-five-forces", "pricing-strategy", "product-strategy", "product-vision", "startup-canvas", "swot-analysis", "value-proposition"],
+      "installedAt": "2026-04-17"
+    }
+  ]
+}
