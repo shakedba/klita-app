@@ -1,0 +1,57 @@
+{
+  "_note": "Disabled MCP servers — restore by moving entries back into ../.mcp.json `mcpServers`.",
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "comment": "Browser automation — screenshot, click, fill forms, visual QA"
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "comment": "Headless browser — scrape pages, generate PDFs, automated testing"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/user"],
+      "comment": "Extended file access — read/write beyond project root"
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "${DATABASE_URL}"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      },
+      "comment": "Natural language SQL — query dev/prod DB, inspect schema, debug data"
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@makenotion/notion-mcp-server"],
+      "env": {
+        "NOTION_API_KEY": "${NOTION_API_KEY}"
+      },
+      "comment": "Notion workspace — read/write pages, databases, docs"
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+      },
+      "comment": "Web scraping — turn any URL into clean markdown for research/context"
+    },
+    "cloudflare": {
+      "command": "npx",
+      "args": ["-y", "@cloudflare/mcp-server-cloudflare"],
+      "env": {
+        "CLOUDFLARE_API_TOKEN": "${CLOUDFLARE_API_TOKEN}"
+      },
+      "comment": "Cloudflare — deploy Workers, manage DNS, KV, R2, D1"
+    },
+    "mermaid": {
+      "command": "npx",
+      "args": ["-y", "mermaid-mcp-server"],
+      "comment": "Diagram generation — architecture, flows, ERDs, sequence diagrams"
+    }
+  }
+}
