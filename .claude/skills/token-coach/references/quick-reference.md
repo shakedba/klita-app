@@ -7,7 +7,7 @@ Reference file for Token Coach. The numbers the coach cites. Updated from resear
 ## Baseline Overhead (Fresh Session)
 
 | Component | Tokens | % of 200K |
-|-----------|--------|----------|
+|-----------|--------|-----------|
 | System prompt | ~3,000 | 1.5% |
 | Built-in tools (18+) | ~12,000-15,000 | 6-7.5% |
 | Autocompact buffer | ~33,000-45,000 | 16.5-22.5% |

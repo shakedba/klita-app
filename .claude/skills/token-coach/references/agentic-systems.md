@@ -76,7 +76,7 @@ Add to CLAUDE.md: "Default subagents to model='haiku' for data gathering, model=
 
 ### Pattern 6: Built-in Agent Type Selection
 | Type | Model | Access | Use For |
-|------|-------|--------|--------|
+|------|-------|--------|---------|
 | Explore | Haiku | Read-only (Glob, Grep, Read) | Codebase navigation, file search |
 | Plan | Configurable | Read-only | Planning, architecture analysis |
 | General-purpose | Default model | Full tools | Tasks requiring write access |

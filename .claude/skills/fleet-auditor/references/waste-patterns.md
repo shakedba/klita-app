@@ -100,7 +100,7 @@ These detectors require parsed session data (AgentRun objects from fleet.db).
 ## Severity Levels
 
 | Level | Color | Meaning | Threshold |
-|-------|-------|---------|----------|
+|-------|-------|---------|-----------|
 | critical | Red | Immediate action needed | >$10/month waste |
 | high | Orange | Should fix soon | >$2/month waste |
 | medium | Cyan | Worth addressing | >$0.50/month waste |
@@ -109,7 +109,7 @@ These detectors require parsed session data (AgentRun objects from fleet.db).
 ## Confidence Levels
 
 | Range | Meaning | Display |
-|-------|---------|--------|
+|-------|---------|---------|
 | 0.8-1.0 | High confidence, likely accurate | Show prominently |
 | 0.5-0.79 | Medium, heuristic-based | Show with caveat |
 | 0.3-0.49 | Low, rough estimate | Show as "possible" |
